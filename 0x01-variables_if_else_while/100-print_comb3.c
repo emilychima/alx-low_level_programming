@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-	int c;
-	int d;
+	int i, j, k;
 
-	for (c = 0; d < 100; c++)
+	for (i = 0; i < 100; i++)
 	{
-		c = 0;
+		j = i / 10;
+		k = i % 10;
 
-		if (c < d)
+		if (j < k)
 		{
-			putchar('0' + d);
-			putchar('0' + c);
+			putchar('0' + j);
+			putchar('0' + k);
 
-			if (d < 89)
+			if (i < 89)
 			{
 				putchar(44);
 				putchar(32);
